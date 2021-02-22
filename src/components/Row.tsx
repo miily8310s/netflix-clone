@@ -44,7 +44,7 @@ export const Row: React.FunctionComponent<Props> = ({
           movies.map((movie, i) => (
             <img
               key={movie.id}
-              className={`Row-poster ${isLargeRow && 'Row-poster-large'}`}
+              className={`Row-poster${isLargeRow ? ' Row-poster-large' : ''}`}
               src={`${BASE_URL}${
                 isLargeRow ? movie.poster_path : movie.backdrop_path
               }`}
