@@ -25,7 +25,6 @@ export const Banner: React.FunctionComponent<movieProps> = () => {
     }
     fetchData()
   }, [])
-  console.log(movie)
 
   const truncate = (str: string | undefined, n: number) => {
     if (str !== undefined) {
@@ -43,7 +42,7 @@ export const Banner: React.FunctionComponent<movieProps> = () => {
       }}
     >
       <div className="Banner-contents">
-        <h1 className="banner-title">
+        <h1 className="Banner-title">
           {movie?.title || movie?.name || movie?.orignal_name}
         </h1>
         <div className="Banner-buttons">
