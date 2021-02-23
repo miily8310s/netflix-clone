@@ -1,8 +1,15 @@
 import '@testing-library/jest-dom'
 import * as React from 'react'
-import { render, fireEvent, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
 import { Nav } from '../Nav'
 
-test('shows navbar when clone is shown ', () => {
-  render(<Nav />)
+describe('clone page is shown', () => {
+  it('displays a logo and avater', () => {
+    render(<Nav />)
+    const displayedImages = document.querySelectorAll('img')
+    const logoImage = displayedImages[0] as HTMLImageElement
+    const logoAvater = displayedImages[1] as HTMLImageElement
+    expect(logoImage.src).toContain('logo')
+    expect(logoAvater.src).toContain('pinimg')
+  })
 })

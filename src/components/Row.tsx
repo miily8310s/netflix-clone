@@ -64,7 +64,6 @@ export const Row: React.FunctionComponent<Props> = ({
       )
       setTrailerUrl(trailerurl.data.results[0]?.key)
     }
-    console.log(trailerUrl)
   }
 
   return (
