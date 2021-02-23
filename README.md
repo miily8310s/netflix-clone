@@ -1,6 +1,7 @@
 # このリポジトリについて
 
-[【React+TypeScript】Netflix のクローンを作るチュートリアル](https://zenn.dev/gunners6518/books/4c4672f32dd100)の写経をしつつ Lintツールを設定したものになります。
+[【React+TypeScript】Netflix のクローンを作るチュートリアル](https://zenn.dev/gunners6518/books/4c4672f32dd100)の写経をしつつ、
+写経元にはなかったLintツール&テストコードを設定・追加したものになります。
 
 ## 【備忘録】
 使用したLintツールの使い方で参考になったページとか公式リポジトリ。
